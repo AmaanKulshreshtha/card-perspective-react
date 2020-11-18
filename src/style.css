@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(1, 15, 115, 1) 0%,
+    rgba(72, 43, 67, 1) 100%
+  );
+  font-family: "Work Sans", sans-serif;
+}
+
+.card-container {
+  perspective: 40px;
+}
