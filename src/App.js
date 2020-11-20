@@ -17,8 +17,9 @@ export default function App() {
     return counter % updateRate === 0;
   };
   const setOrigin = element => {
-    setCenterX(element.offsetLeft + Math.floor(element.offsetWidth / 2));
-    setCenterY(element.offsetTop + Math.floor(element.offsetHeight / 2));
+    const { left, top, width, height } = element.getBoundingClientRect();
+    setCenterX(Math.floor(left) + Math.floor(width.toFixed() / 2));
+    setCenterY(Math.floor(top) + Math.floor(height.toFixed() / 2));
   };
 
   const updatePosition = event => {
